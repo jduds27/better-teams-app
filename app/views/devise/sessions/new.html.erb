@@ -8,7 +8,6 @@
 
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
-
       <div class="row">
         <div class="col-sm-12">
           <div class="form-group">
@@ -27,14 +26,20 @@
         </div>
       </div>
           <% if devise_mapping.rememberable? -%>
-            <div class="field">
+            <div class="form-group signup">
               <%= f.check_box :remember_me %>
               <%= f.label :remember_me %>
             </div>
           <% end -%>
 
+          <br />
+
+          <hr>
+
+          <br />
+
           <div class="actions">
-            <%= f.submit "Log in" %>
+            <%= f.submit "Log in", class: 'btn btn-lg btn-success btnpadding2' %>
           </div>
         <% end %>
 
