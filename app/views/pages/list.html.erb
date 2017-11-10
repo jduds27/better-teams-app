@@ -6,23 +6,12 @@
     <div class="list">
       <div class="card card-body">
       <ul>
-        <li>
-          <%= link_to 'Francesco Moustache', show_path %>
-        </li>
-        <li>
-          <%= link_to 'Francesco Moustache', show_path %>
-        </li>
-        <li>
-          <%= link_to 'Francesco Moustache', show_path %>
-        </li>
-         <li>
-          <%= link_to 'Francesco Moustache', show_path %>
-        </li>
-        <li>
-          <%= link_to 'Francesco Moustache', show_path %>
-        </li>
+      <% @student.each do |s| %>
+      <li><%= s.first_name %> <%= s.last_name %></li>
+      <% end %>
       </ul>
     </div>
+    <%= link_to "Back", index_path, :class => "btn-profile" %>
   </div>
 </div>
   </div>

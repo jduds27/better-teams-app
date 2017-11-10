@@ -9,9 +9,9 @@
 )
 
 puts "1 Admin user created"
-
+10.times do |x|
 Student.create!(
-  email: "student@test.com",
+  email: "student@test#{x}.com",
   password: "testtest",
   password_confirmation: "testtest",
   first_name: "JJ",
@@ -25,6 +25,7 @@ Student.create!(
   github_name: "geomaster58",
   portfolio_url: "https://google.com"
 )
+end
 
 puts "1 Student user created"
 
@@ -39,5 +40,3 @@ User.create!(
 )
 
 puts "1 employer user created"
-
-

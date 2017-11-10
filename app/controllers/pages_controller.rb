@@ -17,5 +17,6 @@ class PagesController < ApplicationController
   end
 
   def list
+    @student = Student.all
   end
 end
