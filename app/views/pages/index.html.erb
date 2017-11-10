@@ -1,1 +1,59 @@
-<h1>Hi Fellas. Im the Index</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+    <meta name="keywords" content="<%= @seo_keywords %>" />
+  </head>
+
+  <body>
+  <div class="page-header">
+   <h1>DevCamp Students</h1>
+  <div class="list">
+    <%= link_to "list" %>
+  </div>
+  </div> 
+       <div class="inner">
+      <div class="content">
+        <div class="card">
+          <div class="firstinfo"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/mrvanz/128.jpg"/>
+            <div class="profileinfo">
+              <h1>Francesco Moustache</h1>
+              <h3>Python Ninja</h3>
+              <p class="bio">Lived all my life on the top of mount Fuji, learning the way to be a Ninja Dev.</p>
+            </div>
+            <div class="profile-link">
+              <%= link_to "Profile", show_path, :class => "btn-profile" %>
+            </div>
+          </div>
+        </div>
+        <div class="badgescard"> <span class="profile info">DevCamp Graduate Employed 5 Months</span></div>
+      </div>
+
+  
+
+    <div class="content">
+   
+  <div class="card">
+    <div class="firstinfo"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/mrvanz/128.jpg"/>
+      <div class="profileinfo">
+        <h1>Francesco Moustache</h1>
+        <h3>Python Ninja</h3>
+        <p class="bio">Lived all my life on the top of mount Fuji, learning the way to be a Ninja Dev.</p>
+      </div>
+    </div>
+  </div>
+  <div class="badgescard"> <span class="profile info">DevCamp Graduate Employed 5 Months</span></div>
+</div>
+
+
+  </div>
+  </body>
+</html>
+
+
+
+
