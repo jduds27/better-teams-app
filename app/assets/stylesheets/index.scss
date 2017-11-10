@@ -43,8 +43,8 @@ $maincolor: #27293d;
 // custom proflie button
 
 .profile-link{
-  padding-bottom: 65px;
-  padding-right: 15px;
+  padding-bottom: 50px;
+  padding-left: 240px;
 }
 
 .btn-profile {
@@ -218,6 +218,16 @@ height: 120px;
   }
 }
 
+.list {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
 .nav {
   margin-left: 140px;
   margin-bottom: 400px;
@@ -250,4 +260,3 @@ a:hover {
 .box-shadow {
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2)
 }
-

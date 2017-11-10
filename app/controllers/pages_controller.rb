@@ -15,4 +15,7 @@ class PagesController < ApplicationController
   def show
      @student = Student.last
   end
+
+  def list
+  end
 end
