@@ -4,16 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    
+   
     <%= csrf_meta_tags %>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
     <meta name="keywords" content="<%= @seo_keywords %>" />
   </head>
 
   <body>
+  <%= stylesheet_link_tag 'index', media: 'all', 'data-turbolinks-track': 'reload' %>
   <div class="page-header">
    <h1>DevCamp Students</h1>
   <div class="list">
-    <%= link_to "list" %>
+    <%= link_to "List View", show_path, :class => "btn btn-info" %>
   </div>
   </div> 
        <div class="inner">
@@ -53,7 +55,4 @@
   </div>
   </body>
 </html>
-
-
-
 

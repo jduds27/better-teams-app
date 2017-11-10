@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :students
   namespace :admin do
     resources :users
 
