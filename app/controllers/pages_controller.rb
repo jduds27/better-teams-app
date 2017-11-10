@@ -9,11 +9,11 @@ class PagesController < ApplicationController
   end
 
   def index
-    @student = Student.all
+    @students = Student.all
   end
 
   def show
-     @student = Student.last
+    @student = Student.last
   end
 
   def list
