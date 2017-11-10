@@ -9,8 +9,9 @@ class PagesController < ApplicationController
   end
 
   def index
+    @student = Student.all
   end
 
-  def show  
+  def show
   end
 end
