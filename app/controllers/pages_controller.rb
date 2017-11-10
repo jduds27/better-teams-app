@@ -14,4 +14,7 @@ class PagesController < ApplicationController
   def show
     @student = Student.find(params[:id])
   end
+
+  def list
+  end
 end
