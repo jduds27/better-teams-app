@@ -12,7 +12,8 @@
     <a class="nav-link" href="#">Contact Us</a>
   </li>
   <li class="dang">
-    <button type="button" class="btn btn-light box-shadow">Register</button>
-    <button type="button" class="btn btn-success box-shadow">Login</button>
+    <%= link_to "register", new_user_registration_path, class: "btn btn-light box-shadow" %>
+    <%= link_to "login", new_user_session_path, class: "btn btn-success box-shadow" %>
   </li>
 </ul>
+

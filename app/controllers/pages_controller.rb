@@ -13,7 +13,7 @@ class PagesController < ApplicationController
   end
 
   def show
-    @student = Student.find(params[:id])
+     @student = Student.last
   end
 
   def list

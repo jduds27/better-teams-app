@@ -7,22 +7,21 @@
         <div class="firstinfo"><%= image_tag "test_profile.jpg" %>
 
           <div class="profileinfo">
-            <h1>Students Name</h1>
-            <h3>Title or quote</h3>
-            <p class="bio">Students Bio</p>
+            <h1><%= @student.first_name %> <%= @student.last_name %></h1>
+            <h3><%= @student.github_name %></h3>
+            <p class="bio"><%= @student.descrption %></p>
           </div>
 
-          <div class="back-link">
-            <%= link_to "Back", index_path, :class => "btn-profile" %>
+        </div>
 
-            <div class='row social-links'>
-              <a href="#"><%= fa_icon "github" %></a>
-              <a href="#"><%= fa_icon "facebook" %></a>
-              <a href="#"><%= fa_icon "twitter" %></a>
-              <a href="#"><%= fa_icon "envelope" %></a>
-            </div>
+        <div class="back-link">
+          <%= link_to "Back", index_path, :class => "btn-profile" %>
+          <div class='row social-links'>
+            <a href="#"><%= fa_icon "github" %></a>
+            <a href="#"><%= fa_icon "facebook" %></a>
+            <a href="#"><%= fa_icon "twitter" %></a>
+            <a href="#"><%= fa_icon "envelope" %></a>
           </div>
-
         </div>
       </div>
     </div>
