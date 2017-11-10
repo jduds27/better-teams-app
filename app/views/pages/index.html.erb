@@ -9,19 +9,18 @@
 </div> 
 
     
-  </div>
-  </div> 
+  
 
 
-   <% @student.each do |s| %>
+   <% @students.each do |s| %>
     <div class="inner">
         <div class="content">
           <div class="card">
             <div class="firstinfo"><img src="https://s3.amazonaws.com/uifaces/faces/twitter/mrvanz/128.jpg"/>
               <div class="profileinfo">
                 <h1><%= s.first_name %></h1>
-                <h3><%= s.tagline %></h3>
-                <p class="bio"><%= s.descrption %></p>
+                <h3><%= s.languages%></h3>
+                <p class="bio"><%= s.tagline %></p>
               </div>
               <div class="profile-link">
                 <%= link_to "Profile", show_path, :class => "btn-profile" %>
@@ -31,7 +30,7 @@
           <div class="badgescard"> <span class="profile info"><%= s.github_name %></span></div>
         </div>
       </div>
- 
+     <br>
    <% end %>
 
 
