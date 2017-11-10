@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
   get 'index', to: 'pages#index'
   get 'show', to: 'pages#show'
+  get 'list', to: 'pages#list'
 
   root to: "pages#home"
 end
