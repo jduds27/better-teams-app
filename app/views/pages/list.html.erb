@@ -1,18 +1,20 @@
+
+<div class="list-view">
  <a class="btn btn-secondary"  data-toggle="collapse" href="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
     List of Available Students
   </a>
-  </p>
+</div>
+ 
   <div class="collapse" id="collapseExample">
     <div class="list">
       <div class="card card-body">
       <ul>
       <% @student.each do |s| %>
-      <li><%= s.first_name %> <%= s.last_name %></li>
+      <li><%= s.first_name %> <%= s.last_name %><span><%= s.phone %></span></li>
       <% end %>
       </ul>
     </div>
     <%= link_to "Back", index_path, :class => "btn-profile" %>
   </div>
 </div>
-  </div>
-  </div> 
+ 

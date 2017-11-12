@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <title>AppInADay</title>
     <%= csrf_meta_tags %>
@@ -13,12 +14,14 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body style="	background-color: #27293d !important;">
 
+    <%= render "shared/nav" %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <%= render "shared/nav" %>
-    <%= yield %>
+
+   <%= yield %> 
+   
   </body>
 </html>
 

@@ -11,21 +11,7 @@
 
 @mixin dimensions($width: null, $height: null) { width: $width; min-height: $height; }
 $maincolor: #27293d;
-    html{height: 100%;}
-    body{
-      
-      @extend %flex;
-       font-family: 'Open Sans', sans-serif;
-      width: 100%;
-      min-height: 100%;
-      background: #27293d;
-      font-size: 16px;
-      overflow: hidden;
-    }
- 
-    *, *:before, *:after {
-      box-sizing: border-box;
-    }
+
 
 .page-header{
   padding-bottom: 45%;
@@ -62,7 +48,8 @@ $maincolor: #27293d;
 .content{
   position: relative; 
   animation: animatop 0.9s  cubic-bezier(0.425, 1.140, 0.470, 1.125) forwards ;
-  padding-top: 35px;
+  padding-bottom: 2%;
+  padding-left: 2.5%;
 }
 
 .card{  
@@ -144,7 +131,12 @@ $maincolor: #27293d;
 }
 
 .back-link{
-  padding-left: 30%;
+  padding-left: 90%;
+  padding-top: 5%;
+}
+
+.social-links {
+  padding-left: 80%;
 }
 
 .social-links a {
@@ -152,6 +144,10 @@ $maincolor: #27293d;
   padding-left: 15px;
   padding-right: 15px;
   font-size: 1.5em;
+}
+
+.pn {
+  padding-left: 40%;
 }
 
 

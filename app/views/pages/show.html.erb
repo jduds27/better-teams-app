@@ -3,7 +3,14 @@
 <%= stylesheet_link_tag 'show', media: 'all', 'data-turbolinks-track': 'reload' %>
   <div class="inner">
     <div class="content">
-      <div class="card">
+      <div class="card" data-id="<%= @student.id %>">
+       
+          <div class='row social-links'>
+            <a href="https://github.com" target="_blank" ><%= fa_icon "github" %></a>
+            <a href="https://facebook.com" target="_blank" ><%= fa_icon "facebook" %></a>
+            <a href="https://twitter.com" target="_blank" ><%= fa_icon "twitter" %></a>
+            <a href="https://gmail.com" target="_blank" ><%= fa_icon "envelope" %></a>
+          </div>
         <div class="firstinfo"><%= image_tag "test_profile.jpg" %>
 
           <div class="profileinfo">
@@ -11,20 +18,21 @@
             <h3><%= @student.github_name %></h3>
             <p class="bio"><%= @student.descrption %></p>
           </div>
+         
 
         </div>
+
+         <div class="pn">
+            <%= @student.phone %> / <%= @student.email %>
+
+          </div>
 
         <div class="back-link">
           <%= link_to "Back", index_path, :class => "btn-profile" %>
-          <div class='row social-links'>
-            <a href="https://github.com" target="_blank" ><%= fa_icon "github" %></a>
-            <a href="https://facebook.com" target="_blank" ><%= fa_icon "facebook" %></a>
-            <a href="https://twitter.com" target="_blank" ><%= fa_icon "twitter" %></a>
-            <a href="https://gmail.com" target="_blank" ><%= fa_icon "envelope" %></a>
-          </div>
+         </div>
         </div>
       </div>
     </div>
-  </div>
+  
 
 </body>

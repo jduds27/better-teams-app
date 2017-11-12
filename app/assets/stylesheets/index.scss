@@ -11,40 +11,43 @@
 
 @mixin dimensions($width: null, $height: null) { width: $width; min-height: $height; }
 
-$maincolor: #27293d;
-    html{height: 100%;}
-    body{
-      
-      @extend %flex;
-       font-family: 'Open Sans', sans-serif;
-      width: 100%;
-      min-height: 100%;
-      background: #27293d;
-      font-size: 16px;
-      overflow: hidden;
-    }
- 
 
-    *, *:before, *:after {
-      box-sizing: border-box;
-    }
 
-.page-header{
-  padding-bottom: 45%;
-  color: white;
-  padding-right: 5%;
+
+
+.top-title {
+  margin-left: 35%;
+  color: lightgrey;
 }
 
 .list {
-  padding-top: 10%;
-  padding-left: 40%;
+  padding-top: 5%;
+  padding-left: 11%;
 }
+
+.content {
+  padding-left: 25%;
+  position: relative; 
+  animation: animatop 0.9s  cubic-bezier(0.425, 1.140, 0.470, 1.125) forwards ;
+  padding-top: 60px;
+ }
+
+.badgescard {
+  margin-top: -5%;
+}
+
+.paginate {
+  padding-top: 7%;
+  padding-left: 35%;
+  padding-bottom: 5%;
+}
+
 
 // custom proflie button
 
 .profile-link{
   padding-bottom: 50px;
-  padding-left: 240px;
+  padding-left: 130px;
 }
 
 .btn-profile {
@@ -111,15 +114,6 @@ $maincolor: #27293d;
 }
 
 
-.inner {
-  position: absolute;
-}
-.content{
-  position: relative; 
-  animation: animatop 0.9s  cubic-bezier(0.425, 1.140, 0.470, 1.125) forwards ;
-  padding-top: 50px;
-}
-
 .card{  
  @include dimensions( 600px,  100px);
   border-radius: 3px;
@@ -146,7 +140,7 @@ $maincolor: #27293d;
     width: 600px; 
     height: 50px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    position: absolute;
+    position: relative;
     z-index: -1; 
     left: 10px; 
     bottom: 10px;
@@ -156,8 +150,7 @@ $maincolor: #27293d;
     font-size: 1.6em;
     margin: 0px 6px;
     opacity: 0.6;
-    padding-bottom: 35;
-    }
+      }
   }   
 
 .firstinfo{
@@ -174,7 +167,7 @@ height: 120px;
     padding: 0px 20px;
     h1{ font-size: 1.8em;}
     h3{ font-size: 1.2em;
-        color: $maincolor;
+        color: #27293d;
         font-style: italic;
     }
     p.bio{
@@ -218,45 +211,3 @@ height: 120px;
   }
 }
 
-.list {
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-}
-
-ul {
-  list-style-type: none;
-}
-.nav {
-  margin-left: 140px;
-  margin-bottom: 400px;
-  font-size: .9em;
-  
- }
-
-.nav-link {
-  color: white;
-   }
-
-a:hover { 
-    color: grey;
-    transition-duration: .5s;
-}
-
-.logo {
-  margin-left: 27px;
-  margin-top: -18.5px;
-}
-
-.dang {
-  margin-left: 400px;
-}
-
-.btn {
-  margin-left: 30px;
-}
-
-.box-shadow {
-    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2)
-}

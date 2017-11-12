@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :students
   namespace :admin do
-    resources :users
+    resources :students, param: :student_id
 
     root to: "users#index"
   end

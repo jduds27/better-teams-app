@@ -1,6 +1,7 @@
+
 <ul class="nav">
   <li class="nav-item logo">
-    <%= image_tag("devcamplogo.png", :size => "140x38") %>
+    <%= link_to image_tag("devcamplogo.png", :size => "140x38"), root_path %>
   </li>
   <li class="nav-item">
     <a class="nav-link active" href="#">Apply To Bootcamp</a>
@@ -12,10 +13,9 @@
     <%= link_to "Students", index_path, class: "nav-link" %>
   </li>
   <li class="dang">
-    <%= link_to "register", new_user_registration_path, class: "btn btn-light box-shadow" %>
-    <%= link_to "login", new_user_session_path, class: "btn btn-success box-shadow" %>
-    <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-danger box-shadow" %>
+    <%= login_helper %>
   </li>
 </ul>
+
 
               

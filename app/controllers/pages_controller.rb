@@ -1,4 +1,8 @@
 class PagesController < ApplicationController
+  access all: [:home],
+         students: {except: [:list]},
+         admin: :all
+
   def home
   end
 
@@ -9,14 +13,20 @@ class PagesController < ApplicationController
   end
 
   def index
-    @students = Student.all
+    @student = Student.all.page(params[:page]).per(5)
   end
 
   def show
-    @student = Student.last
+    @student = Student.find(params[:id])
   end
 
   def list
     @student = Student.all
+  end
+
+  private
+
+  def set_student
+    @student = Student.find(params[:id])
   end
 end
